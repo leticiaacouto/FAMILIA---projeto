@@ -1,6 +1,5 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Hind:wght@300&family=IM+Fell+DW+Pica+SC&family=Metal&display=swap');
 
 * {
     margin: 0;
@@ -9,18 +8,18 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 40px 0;
-    font-family: "Raleway";
+    
+    /* margin: 40px 0; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
     font-weight: 500;
     background-color: #BCAAA4;
     -webkit-font-smoothing: antialiased;
-    
+ 
 }
 
 .title {
-  font-family: "Raleway";
+  font-family: Libre Baskerville;
   font-size: 24px;
   font-weight: 700;
   color: #5D4037;
@@ -47,7 +46,7 @@ h1+p, p+p {
   transform: perspective(800px);
   transform-style: preserve-3d;
   cursor: pointer;
-  background-color: #fff;
+  background-color: rgb(0, 0, 0);
 }
 
     .card-info {
@@ -71,7 +70,7 @@ h1+p, p+p {
     }
     .card {
       transition:0.6s;
-      box-shadow: 2s rgba(white, 0.2) 0 0 40px 5px, rgba(white, 1) 0 0 0 1px, rgba(black, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset white 0 0 0 6px;
+      box-shadow: 2s rgba(rgb(5, 4, 4), 0.2) 0 0 40px 5px, rgba(rgb(0, 0, 0), 1) 0 0 0 1px, rgba(black, 0.66) 0 30px 60px 0, inset #333 0 0 0 5px, inset white 0 0 0 6px;
     }
   
 
@@ -95,7 +94,7 @@ h1+p, p+p {
   position: absolute;
   top: -20px; left: -20px;
   width: 100%;
-  height: 100%;
+  height: auto;
   padding: 20px;
   background-repeat: no-repeat;
   background-position: center;
@@ -130,7 +129,7 @@ h1+p, p+p {
     top: 0; left: 0;
     z-index: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
     background-image: linear-gradient(to bottom, transparent 0%, rgba(#000, 0.6) 100%);
     background-blend-mode: overlay;
     opacity: 0;
@@ -140,7 +139,7 @@ h1+p, p+p {
 
 
 .card-info h1 {
-  font-family: "Playfair Display";
+  font-family: Libre Baskerville;
   font-size: 36px;
   font-weight: 700;
   text-shadow: rgba(black, 0.5) 0 10px 10px;
@@ -232,115 +231,95 @@ h1+p, p+p {
 }
  /* ------------- Barra de menu fixa --------------*/
  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font: 'Poppins', sans-serif;
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font: lato;
+}
 
-  html{
-    height: 500vh;
-    background-color: #ffffff;
-  }
+html{
+  height: 400vh;
+  background-color: #ffffff;
+}
 
-  .container1{
-    max-width: 1220px;
-    margin: auto;
-  }
+.container1{
+  font-family: Libre Baskerville;
+  max-width: 1220px;
+  margin: auto;
+}
 
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
-  .flex{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  header{
-    width: 100%;
-    padding: 30px 4%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: 1s;
-    
-  }
-
-  header.rolagem{
-    background-color: #00121b4b;
-    padding: 25px, 5%;
-  }
-
-  header.rolagem a, header.rolagem i{
-    color: #ffffff;
-  }
+header{
+  width: 100%;
+  padding: 30px 4%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 1s;
+  font-family: Libre Baskerville;
   
-  header i{
-    font-size: 30px;
-    color: #fff;
-  }
-
-  header ul{
-    list-style-type: none;
-  }
-
-  header ul li{
-    display: inline-block;
-    margin: 0 40px;
-  }
-
-  header ul  li a{
-    color: rgb(129, 182, 218);
-    text-decoration: none;
-    font-size: 0.7em;
-  }
+}
 
 
-  header ul li a::after {
- 
-    position: absolute;
-    content: "";
-    top: 100%;
-    right: 0;
-    width: 100%;
-    height: 2px;
-    background: #f8efe1;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.5s;
-  }
 
-  header ul  li a:hover{
-    color: #6c9efa;
-  }
+header i{
+  font-size: 30px;
+  color: #fff;
+}
+
+header ul{
+  list-style-type: none;
+}
+
+header ul li{
+  display: inline-block;
+  margin: 0 40px;
+}
+
+header ul  li a{
+  color: #fcf9ff;
+  text-decoration: none;
+  font-size: 0.7em;
+}
+
+
+header ul li a::after {
+
+  position: absolute;
+  content: "";
+  top: 100%;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background: #f8efe1;
+  transform: scaleX(0);
   
+}
 
-  header  ul li a:hover::after {
-  
-    transform: scaleX(1);
-    transform-origin: left;
-  }
+header ul  li a:hover{
+  color: #071837;
+}
 
-  
 
-  .btm-contato button{
-    width: 120px;
-    height: 40px;
-    border: 0;
-    background-color: #bddef5;
-    color: #fff;
-    cursor: pointer;
-    transition: .2s;}
+header  ul li a:hover::after {
+
+  transform: scaleX(1);
+  transform-origin: left;
+}
     
     /* ---------- Fim da barra de menu fixa ----------- */
-
- 
 
 
         /*------------- RODAPÉ------------- */
 
         .footer {
             width: 100%;
-            background: #00121b;
+            background: #62a5c7;
             display: block;
            }
           
@@ -355,6 +334,7 @@ h1+p, p+p {
            }
           
           .footer-items {
+            font-family: Libre Baskerville;
             width: 25%;
             padding: 10px 20px;
             box-sizing: border-box;
@@ -435,7 +415,7 @@ h1+p, p+p {
           
           .footer-bottom {
             padding: 10px;
-            background: #00121b;
+            background: rgba(10, 9, 9, 0.133);;
             color: #fff;
             font-size: 12px;
             text-align: center;
@@ -467,3 +447,46 @@ h1+p, p+p {
     
     /* -------------FINAL RODAPÉ---------------- */
 
+
+    /* inicio das QUATRO fotos */
+    .pai {
+      background-color: rgb(23, 22, 22);
+      padding: 20px;
+      text-align: center;
+      display: flex;
+    }
+
+
+    .leticia{
+      /* margin: 1.5em; */
+      display: flex;
+      height: 30em;
+      gap: 1em;
+      
+ }
+
+    .leticia div{
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat; 
+      /* background-position: 50%;  */
+      flex: 1;
+      transition: all 0.9s cubic-bezier(0.075, 0.82, 0.165, 1);
+      border-radius: 5px;
+      filter: grayscale(1) sepia(50%) saturate(15%);
+      /* width: auto;  */
+  
+ }
+
+    .leticia div:hover{
+      flex: 2;
+      border-radius: 5px;
+      filter: none; 
+  }
+  
+  .leticia:hover div:not(:hover){
+      background-color: #ffffff;
+  }
+  /* inicio das QUATRO fotos */
+
+ 
